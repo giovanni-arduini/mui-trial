@@ -59,12 +59,13 @@ const Navbar = () => {
               </IconButton>
             ) : (
               <>
-                <Button color="inherit" href="#coffee">
-                  COFFEE
-                </Button>
-                <Button color="inherit" href="#home">
-                  HOME
-                </Button>
+                {drawerLinks.map((linkItem, index) => {
+                  return (
+                    <Button color="inherit" href={linkItem.link} key={index}>
+                      {linkItem.text}
+                    </Button>
+                  );
+                })}
               </>
             )}
           </Toolbar>
