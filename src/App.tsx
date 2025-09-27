@@ -19,6 +19,7 @@ import { PhotoCamera } from "@mui/icons-material";
 import theme from "./assets/theme.ts";
 
 import Navbar from "./components/NavBar/NavBar.tsx";
+import Hero from "./components/Hero/Hero.jsx";
 
 export default function App() {
   return (
@@ -32,6 +33,7 @@ export default function App() {
         </Toolbar>
       </AppBar> */}
         <Navbar />
+        <Hero />
         <main>
           <Container maxWidth="sm">
             <Typography
